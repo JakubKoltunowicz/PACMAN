@@ -1,0 +1,12 @@
+﻿  Main.cpp
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244:             T=unsigned int
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244:         ]
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,28): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,28): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,28): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,28): warning C4244:             T=unsigned int
+C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,28): warning C4244:         ]
+  PJC_PACMAN.vcxproj -> C:\Users\kubal\Desktop\PJC_PACMAN\Debug\PJC_PACMAN.exe
