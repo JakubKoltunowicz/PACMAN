@@ -51,6 +51,7 @@ void Entity::ruch()
 
 
 	obiekt.move(Vector2f(wektor_kierunku.x * 0.5, wektor_kierunku.y * 0.5));
+
 	obiekt.setPosition(Vector2f((float)fmod(obiekt.getPosition().x, 448), (float)fmod(obiekt.getPosition().y, 496)));
 	if (obiekt.getPosition().x < 0)
 	{

@@ -48,8 +48,10 @@ void Game::go()
 
 		ingame.clear();
 
-		player.zaktualizuj(punkty, monster.uzyskaj_pozycje(), kolizja);
 		monster.zaktualizuj();
+		player.zaktualizuj(punkty);
+
+		player.kolizja(monster.uzyskaj_pozycje(), kolizja);
 
 		mapa_gry.rysuj(&ingame);
 		player.rysuj(&ingame);

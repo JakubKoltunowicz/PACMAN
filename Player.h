@@ -13,7 +13,8 @@ public:
 	Player();
 	~Player();
 	void ustaw_pacmana(Map* mapToLoad, string path, Vector2f position);
-	void zaktualizuj(int& punkty, Vector2f pozycja_potwora, int& kolizja);
+	void zaktualizuj(int& punkty);
 	void zmiana_kierunku();
+	void kolizja(Vector2f pozycja_potwora, int& kolizja);
 };
 

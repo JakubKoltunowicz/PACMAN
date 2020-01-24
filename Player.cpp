@@ -23,13 +23,8 @@ void Player::ustaw_pacmana(Map* mapa_gry, string sciezka_tekstury, Vector2f pozy
 	obiekt.setTextureRect(IntRect(0, 0, 16, 16));
 }
 
-void Player::zaktualizuj(int& punkty, Vector2f pozycja_potwora, int& kolizja)
+void Player::zaktualizuj(int& punkty)
 {
-	if (Vector2f(obiekt.getPosition().x / 16, obiekt.getPosition().y / 16) == Vector2f(pozycja_potwora.x / 16, pozycja_potwora.y / 16))
-	{
-		kolizja = 1;
-	}
-
 	if (Keyboard::isKeyPressed(Keyboard::Left))
 	{
 		ustawKierunek(Vector2f(-1, 0));
@@ -59,4 +54,12 @@ void Player::zaktualizuj(int& punkty, Vector2f pozycja_potwora, int& kolizja)
 void Player::zmiana_kierunku()
 {
 	obiekt.setRotation(atan2(wektor_kierunku.y, wektor_kierunku.x) * (180.f / (float)M_PI));
+}
+
+void Player::kolizja(Vector2f pozycja_potwora, int& kolizja)
+{
+	if (Vector2f(obiekt.getPosition().x / 16, obiekt.getPosition().y / 16) == Vector2f(pozycja_potwora.x / 16, pozycja_potwora.y / 16))
+	{
+		kolizja = 1;
+	}
 }
