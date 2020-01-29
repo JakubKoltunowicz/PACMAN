@@ -1,16 +1,26 @@
 ﻿  Entity.cpp
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,66): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,66): warning C4244:         with
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,66): warning C4244:         [
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,66): warning C4244:             T=float
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,66): warning C4244:         ]
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,66): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,66): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,66): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,66): warning C4244:             T=float
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,66): warning C4244:         ]
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,41): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,41): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,41): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,41): warning C4244:             T=float
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(51,41): warning C4244:         ]
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,66): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,66): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,66): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,66): warning C4244:             T=float
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,66): warning C4244:         ]
   Game.cpp
   Main.cpp
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,41): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,41): warning C4244:         with
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,41): warning C4244:         [
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,41): warning C4244:             T=float
-C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(53,41): warning C4244:         ]
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,41): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,41): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,41): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,41): warning C4244:             T=float
+C:\Users\kubal\Desktop\PJC_PACMAN\Entity.cpp(67,41): warning C4244:         ]
 C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
 C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244:         with
 C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,48): warning C4244:         [
@@ -25,8 +35,18 @@ C:\Users\kubal\Desktop\PJC_PACMAN\Main.cpp(16,28): warning C4244:         ]
 C:\Users\kubal\Desktop\PJC_PACMAN\Map.cpp(46,34): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
   Menu.cpp
   Monster.cpp
+C:\Users\kubal\Desktop\PJC_PACMAN\Map.cpp(46,26): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(33,14): warning C4244: "=": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(33,14): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(33,14): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(33,14): warning C4244:             T=float
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(33,14): warning C4244:         ]
   Player.cpp
   Generowanie kodu...
-C:\Users\kubal\Desktop\PJC_PACMAN\Map.cpp(46,26): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\kubal\Desktop\PJC_PACMAN\Menu.cpp(65): warning C4715: "Menu::przycisk”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(34,14): warning C4244: "=": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(34,14): warning C4244:         with
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(34,14): warning C4244:         [
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(34,14): warning C4244:             T=float
+C:\Users\kubal\Desktop\PJC_PACMAN\Monster.cpp(34,14): warning C4244:         ]
+C:\Users\kubal\Desktop\PJC_PACMAN\Menu.cpp(63): warning C4715: "Menu::przycisk”: niewszystkie ścieżki kodu zwracają wartość
   PJC_PACMAN.vcxproj -> C:\Users\kubal\Desktop\PJC_PACMAN\Debug\PJC_PACMAN.exe

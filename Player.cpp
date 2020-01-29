@@ -23,26 +23,43 @@ void Player::ustaw_pacmana(Map* mapa_gry, string sciezka_tekstury, Vector2f pozy
 	obiekt.setTextureRect(IntRect(0, 0, 16, 16));
 }
 
-void Player::zaktualizuj(int& punkty)
+void Player::start()
 {
-	if (Keyboard::isKeyPressed(Keyboard::Left))
-	{
-		ustawKierunek(Vector2f(-1, 0));
-	}
-	else if (Keyboard::isKeyPressed(Keyboard::Right))
-	{
-		ustawKierunek(Vector2f(1, 0));
-	}
-	else if (Keyboard::isKeyPressed(Keyboard::Up))
-	{
-		ustawKierunek(Vector2f(0, -1));
-	}
-	else if (Keyboard::isKeyPressed(Keyboard::Down))
-	{
-		ustawKierunek(Vector2f(0, 1));
-	}
+	wektor_kierunku = Vector2f(0, 0);
+	odbicie_od_sciany();
+}
 
-	ruch();
+void Player::stop()
+{
+	bufor_kierunku = Vector2f(0, 0);
+}
+
+void Player::zaktualizuj(int& punkty, bool kontrola)
+{
+	if (kontrola == 0)
+	{
+		if (Keyboard::isKeyPressed(Keyboard::Left))
+		{
+			ustawKierunek(Vector2f(-1, 0));
+		}
+		else if (Keyboard::isKeyPressed(Keyboard::Right))
+		{
+			ustawKierunek(Vector2f(1, 0));
+		}
+		else if (Keyboard::isKeyPressed(Keyboard::Up))
+		{
+			ustawKierunek(Vector2f(0, -1));
+		}
+		else if (Keyboard::isKeyPressed(Keyboard::Down))
+		{
+			ustawKierunek(Vector2f(0, 1));
+		}
+		ruch2();
+	}
+	else
+	{
+		ruch1();
+	}
 
 	if (map->sciana(obiekt.getPosition()) == 2)
 	{
@@ -63,3 +80,4 @@ void Player::kolizja(Vector2f pozycja_potwora, int& kolizja)
 		kolizja = 1;
 	}
 }
+

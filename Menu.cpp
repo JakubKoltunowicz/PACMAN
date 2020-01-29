@@ -48,12 +48,10 @@ int Menu::przycisk(Event event, RenderWindow* window)
 	{
 		if (wybrana_opcja == 0)
 		{
-			//window->close();
 			return 1;
 		}
 		if (wybrana_opcja == 1)
 		{
-			cout << "OPCJUJEMY" << endl;
 			return 0;
 		}
 		if (wybrana_opcja == 2)
