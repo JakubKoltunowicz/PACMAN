@@ -3,7 +3,10 @@
 #include "Game.h"
 #include "Player.h"
 #include <iostream>
+#include <cmath>
 #include <SFML/Graphics.hpp>
+
+#define M_PI 3.14159265358979323846
 
 using namespace std;
 using namespace sf;
@@ -15,6 +18,56 @@ Entity::Entity()
 }
 
 Entity::~Entity() {}
+
+Vector2f Entity::get_wektor_kierunku()
+{
+	return wektor_kierunku;
+}
+
+void Entity::set_wektor_kierunku(Vector2f n)
+{
+	wektor_kierunku = n;
+}
+
+Vector2f Entity::get_bufor_kierunku()
+{
+	return wektor_kierunku;
+}
+
+void Entity::set_bufor_kierunku(Vector2f n)
+{
+	wektor_kierunku = n;
+}
+
+Sprite Entity::get_obiekt()
+{
+	return obiekt;
+}
+
+void Entity::set_obiekt(Sprite n)
+{
+	obiekt = n;
+}
+
+void Entity::set_obiekt_texture(int a, int b, int c, int d)
+{
+	obiekt.setTextureRect(IntRect(a, b, c, d));
+}
+
+void Entity::set_obiekt_rotation()
+{
+	obiekt.setRotation(atan2(wektor_kierunku.y, wektor_kierunku.x) * (180.f / (float)M_PI));
+}
+
+void Entity::set_obiekt_position(Vector2f result)
+{
+	obiekt.setPosition(result);
+}
+
+Map* Entity::get_map()
+{
+	return map;
+}
 
 void Entity::ustaw_postac(Map* mapa_gry, string sciezka_tekstury, Vector2f pozycja)
 {

@@ -14,8 +14,6 @@ using namespace sf;
 class Entity
 {
 private:
-	friend class Monster;
-	friend class Player;
 	bool czy_zyje;
 	Texture tekstura;
 	Map* map;
@@ -33,6 +31,64 @@ public:
 	*destruktor
 	*/
 	~Entity();
+	/**
+	*@brief
+	*funkcja zwracajaca wektor kierunku
+	*/
+	Vector2f get_wektor_kierunku();
+	/**
+	*@brief
+	*funkcja ustawiajaca wektor kierunku
+	*@param n wektor ktory ma byc przypisany wektorowi kierunku
+	*/
+	void set_wektor_kierunku(Vector2f n);
+	/**
+	*@brief
+	*funkcja zwracajaca bufor kierunku
+	*/
+	Vector2f get_bufor_kierunku();
+	/**
+	*@brief
+	*funkcja ustawiajaca bufor kierunku
+	*@param n wektor ktory ma byc przypisany buforowi kierunku
+	*/
+	void set_bufor_kierunku(Vector2f n);
+	/**
+	*@brief
+	*funkcja zwracajaca obiekt
+	*/
+	Sprite get_obiekt();
+	/**
+	*@brief
+	*funkcja ustawiajaca obiekt
+	*@param n ma byc przypisany obiektowi
+	*/
+	void set_obiekt(Sprite n);
+	/**
+	*@brief
+	*funkcja ustawiajaca teksturê obiektu
+	*@param a pierwsza wspolrzedna tekstury
+	*@param b druga wspolrzedna tekstury
+	*@param c trzecia wspolrzedna tekstury
+	*@param d czwarta wspolrzedna tekstury
+	*/
+	void set_obiekt_texture(int a, int b, int c, int d);
+	/**
+	*@brief
+	*funkcja ustawiajaca rotacjê obiektu
+	*/
+	void set_obiekt_rotation();
+	/**
+	*@brief
+	*funkcja ustawiajaca pozycjê obiektu
+	*@param result to wektor z nowym po³o¿eniem obiektu
+	*/
+	void set_obiekt_position(Vector2f result);
+	/**
+	*@brief
+	*funkcja zwracajaca mapê
+	*/
+	Map* get_map();
 	/**
 	*@brief
 	*funkcja odpowiadaj¹ca za wylosowanie nowego wektora który nie bêdzie powodowa³ kolizji

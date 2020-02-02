@@ -34,10 +34,10 @@ void Monster::teleport()
 		result.y = rand2;
 	} while (kolizja_z_sciana(result));
 
-	obiekt.setPosition(result);
+	set_obiekt_position(result);
 }
 
 Vector2f Monster::uzyskaj_pozycje()
 {
-	return obiekt.getPosition();
+	return get_obiekt().getPosition();
 }
